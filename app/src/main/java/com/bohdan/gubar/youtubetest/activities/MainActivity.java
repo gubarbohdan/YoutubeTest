@@ -23,6 +23,7 @@ import com.bohdan.gubar.youtubetest.fragments.PlaylistFragment;
 import com.google.android.youtube.player.YouTubeStandalonePlayer;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.pkmmte.view.CircularImageView;
 import com.squareup.picasso.Picasso;
 
 public class MainActivity extends AppCompatActivity
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity
     public static final String BUNDLE_ID = "ID";
     public static final String BUNDLE_TITLE = "TITLE";
 
-    private ImageView mPhotoImageView;
+    private CircularImageView mPhotoImageView;
     private Toolbar mToolbar;
     private TextView mNameTextView;
     private TextView mEmailTextView;
@@ -72,7 +73,7 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        mPhotoImageView = (ImageView) navigationView.getHeaderView(0).findViewById(R.id.imageView_user_photo);
+        mPhotoImageView = (CircularImageView) navigationView.getHeaderView(0).findViewById(R.id.imageView_user_photo);
         mNameTextView = (TextView) navigationView.getHeaderView(0).findViewById(R.id.textView_name);
         mEmailTextView = (TextView) navigationView.getHeaderView(0).findViewById(R.id.textView_email);
 
