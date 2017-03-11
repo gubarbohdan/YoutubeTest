@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_list1"
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:title="@string/title_pop"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_list2"
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:title="@string/title_hip_hop" />
+        <item
+            android:id="@+id/nav_list3"
+            android:icon="@drawable/ic_playlist_play_black_24dp"
+            android:title="@string/title_rock" />
+    </group>
+
+</menu>
